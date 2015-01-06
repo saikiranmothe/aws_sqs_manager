@@ -1,0 +1,23 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* http://docs.aws.amazon.com/AWSRubySDK/latest/AWS/SQS.html
+
+* https://github.com/phstc/shoryuken
+
+* https://github.com/aws/aws-sdk-ruby
+
+* 
+
+
+
+Some more examples
+===================
+http://www.mutuallyhuman.com/blog/2010/05/11/amazon-sqs-with-ruby/
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
