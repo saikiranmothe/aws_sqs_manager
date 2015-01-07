@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 #super-efficient AWS SQS thread-based message processor.
 gem 'shoryuken'
 gem 'aws-sdk-v1'
+gem 'ehonda',:path => 'vendor/ehonda'

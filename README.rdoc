@@ -12,7 +12,28 @@ Things you may want to cover:
 * https://github.com/aws/aws-sdk-ruby
 
 * 
+install 
+gem 'shoryuken'
+gem 'aws-sdk-v1'
 
+sqs = AWS::SQS.new(
+  :access_key_id => 'YOUR_ACCESS_KEY_ID',
+  :secret_access_key => 'YOUR_SECRET_ACCESS_KEY')
+
+#create a queue
+queue = sqs.queues.create("myqueue")
+
+#get queues from account
+pp sqs.queues.collect(&:url)
+
+#send msg to queue
+msg = queue.send_message("HELLO")
+puts "Sent message: #{msg.id}"
+
+#polling for messages
+queue.poll do |msg|
+  puts "Got message: #{msg.body}"
+end
 
 
 Some more examples
